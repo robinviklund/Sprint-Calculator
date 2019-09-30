@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "test": "ava"
+    },
+    "devDependencies": {
+        "ava": "^2.4.0"
+    },
+    "name": "pacecalculator",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {},
+    "author": "Robin",
+    "license": "ISC",
+    "description": "",
+    "test": "ava"
+}

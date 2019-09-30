@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <title>Pace Calculator</title>
+    </head>
+    <body>
+        <div id="center">
+            <div id="choose">
+                <h1>RÄKNA UT</h1>
+                <div id="row">
+                    <div class="box" id="TID" onclick="choose(this.id)">
+                        TID
+                    </div>
+                    <div class="box" id="PACE" onclick="choose(this.id)">
+                        PACE<img src="" />
+                    </div>
+                    <div class="box" id="DISTANS" onclick="choose(this.id)">
+                        DISTANS
+                    </div>
+                </div>
+            </div>
+            <div id="inputForm">
+                <h1>RÄKNA UT</h1>
+                <form>
+                    <div id="time" class="time">
+                        TID: (h:m:s)<br />
+                        <input
+                            type="number"
+                            oninput="update()"
+                            name="tid"
+                            placeholder="hh"
+                            id="hour1"
+                            value="0"
+                        />:<input
+                            type="number"
+                            oninput="update()"
+                            name="tid"
+                            placeholder="mm"
+                            id="min1"
+                            value="0"
+                        />:<input
+                            type="number"
+                            oninput="update()"
+                            name="tid"
+                            placeholder="ss"
+                            id="sec1"
+                            value="0"
+                        /><br />
+                    </div>
+                    <div id="speed" class="time">
+                        PACE: (h:m:s)<br />
+                        <input
+                            type="number"
+                            oninput="update()"
+                            name="pace"
+                            placeholder="hh"
+                            id="hour2"
+                            value="0"
+                        />:<input
+                            type="number"
+                            oninput="update()"
+                            name="pace"
+                            placeholder="mm"
+                            id="min2"
+                            value="0"
+                        />:<input
+                            type="number"
+                            oninput="update()"
+                            name="pace"
+                            placeholder="ss"
+                            id="sec2"
+                            value="0"
+                        /><br />
+                    </div>
+                    <div id="distance">
+                        DISTANS: (m)<br />
+                        <input
+                            type="number"
+                            oninput="update()"
+                            name="distans"
+                            placeholder="m"
+                            value="0"
+                        />
+                    </div>
+                </form>
+                <h2 id="result"></h2>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
