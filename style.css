@@ -31,7 +31,6 @@
     width: 100px;
     height: 100px;
     background-color: #c22d00;
-    color: white;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -69,4 +68,26 @@ form {
     #row {
         flex-direction: column;
     }
+}
+
+#back {
+    width: 50px;
+    height: 50px;
+    background-color: #c22d00;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back img {
+    width: 30px;
+    height: 25px;
+    margin-right: 3px;
+}
+
+#back:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
